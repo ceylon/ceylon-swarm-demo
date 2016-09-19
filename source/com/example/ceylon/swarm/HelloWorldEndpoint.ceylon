@@ -5,6 +5,7 @@ import javax.ws.rs.core { Response }
 path("/hello")
 shared class HelloWorldEndpoint() {
 
+  "Returns a friendly Hello"
   get
   produces({"text/plain"})
   shared Response doGet()

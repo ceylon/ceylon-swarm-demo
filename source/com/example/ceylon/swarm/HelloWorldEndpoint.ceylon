@@ -8,6 +8,6 @@ shared class HelloWorldEndpoint() {
   "Returns a friendly Hello"
   get
   produces({"text/plain"})
-  shared Response doGet()
+  default shared Response doGet()
     => Response.ok("Hello from WildFly Swarm in Ceylon!\n").build();
 }
